@@ -4,6 +4,15 @@ This console application takes designs and available flowers as input
 The output will be a bouquet every time one can be created from the available
 flowers:
 
+Table of Contents:
+--------------------
+- [Installation](##Installation)
+- [Tests](##Tests)
+- [Usage](##Usage)
+- [Assumptions](##Assumptions)
+- [Example](##Example)
+
+
 ## Installation
 **Prerequisite: Docker is installed**
 
@@ -26,7 +35,7 @@ Run the command line application in Docker using following command:
 $ docker run -ti image_name
 ```
 
-## Assumptions:
+## Assumptions
 - Design format includes flower size only once and it defines the size for all flowers in the given design (i.e. a large design can only
 have large flowers).
 - The flower species are listed in alphabetic order and only appear once.
@@ -39,7 +48,7 @@ only have large flowers).
 - The flower species are listed in alphabetic order and only appear once.
 - The flower quantities are always larger than 0.
 
-## Example:
+## Example
 Command line application running in Docker
 ```shell
 $ docker run -ti  flowers

@@ -20,7 +20,6 @@ def test_validate_flower(store, data, expected):
     assert store.validate_flower(data) == expected
 
 
-
 @pytest.mark.parametrize("data, expected", [
     ("ALa2b1100", False),
     ("al1a2b3", False),
