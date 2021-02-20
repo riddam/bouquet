@@ -20,6 +20,7 @@ def test_validate_flower(store, data, expected):
     assert store.validate_flower(data) == expected
 
 
+
 @pytest.mark.parametrize("data, expected", [
     ("ALa2b1100", False),
     ("al1a2b3", False),
@@ -27,18 +28,18 @@ def test_validate_flower(store, data, expected):
     ("DS3a1b1", False),
     ("AL1a2b3c5", True)
 ])
-def test_validate_design(data, expected, store):
+def test_validate_design(data, expected):
     """
     Parameterize test cases to check positive and negative test case for design generation after validation
     """
-    assert bool(store.generate_design(data)) == expected
+    assert bool(Store.generate_design(data)) == expected
 
 
-def test_validate_design_object(store):
+def test_validate_design_object():
     """
     Positive Case: Design object is created if valid design is provided
     """
-    obj = store.generate_design("AL1a2b3c5")
+    obj = Store.generate_design("AL1a2b3c5")
     assert obj.name == "A"
     assert obj.size == "L"
     assert obj.total == 5
