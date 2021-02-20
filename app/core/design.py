@@ -1,5 +1,10 @@
+import re
+
 
 class Design:
+    pattern = r"(?P<name>[A-Z])(?P<size>[LS])(?P<species>([1-9][" \
+              r"0-9]*[a-z])+)(?P<total>[1-9][0-9]*)"
+    design_pattern = re.compile(pattern)
 
     def __init__(self, name: str, size: str, species: dict, total: str):
         """
