@@ -11,6 +11,8 @@ WORKDIR /app
 COPY ./app /app
 
 RUN adduser -D user
+COPY runner.sh runner.sh
+RUN chmod +x runner.sh
 USER user
 
-CMD ["python", "main.py"]
+CMD ["/bin/sh", "runner.sh"]
