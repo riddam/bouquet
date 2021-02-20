@@ -6,11 +6,11 @@ flowers:
 
 Table of Contents:
 --------------------
-- [Installation](##Installation)
-- [Tests](##Tests)
-- [Usage](##Usage)
-- [Assumptions](##Assumptions)
-- [Example](##Example)
+- [Installation](#Installation)
+- [Tests](#Tests)
+- [Usage](#Usage)
+- [Assumptions](#Assumptions)
+- [Example](#Example)
 
 
 ## Installation
